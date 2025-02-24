@@ -1,0 +1,11 @@
+[Unit]
+Description=Test Process Monitor
+After=network.target
+
+[Service]
+ExecStart=/bin/bash (your path)/test.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
